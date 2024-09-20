@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <script>
+    var params = [
+    'height='+screen.height,
+    'width='+screen.width,
+    'fullscreen=yes' // only works in IE, but here for completeness
+].join(',');
+  window.open('<?=url?>', '_blank', params);
+  google.script.host.close();
+</script>
+  </body>
+</html>
+
+
